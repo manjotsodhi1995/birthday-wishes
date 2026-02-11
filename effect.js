@@ -1,3 +1,8 @@
+// Session guard: redirect to login if not authenticated
+if (sessionStorage.getItem("birthday_authenticated") !== "true") {
+  window.location.href = "login.html";
+}
+
 $(window).load(function() {
   $(".loading").fadeOut("fast");
   $(".container").fadeIn("fast");
