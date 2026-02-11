@@ -227,6 +227,16 @@ $("document").ready(function() {
 
     msgLoop(0);
   });
+
+  // Logout functionality
+  $("#logout").click(function() {
+    // Clear authentication data
+    localStorage.removeItem('authData');
+    sessionStorage.removeItem('authData');
+
+    // Redirect to login page
+    window.location.href = 'login.html';
+  });
 });
 
 //alert('hello');

@@ -31,6 +31,29 @@
 
 <body>
 	<div class="loading"></div>
+	<script>
+		// Check authentication before showing content
+		function checkAuth() {
+			const localAuth = localStorage.getItem('authData');
+			const sessionAuth = sessionStorage.getItem('authData');
+			const authData = localAuth || sessionAuth;
+
+			if (!authData) {
+				window.location.href = 'login.html';
+				return;
+			}
+
+			try {
+				const parsed = JSON.parse(authData);
+				if (!parsed.loggedIn) {
+					window.location.href = 'login.html';
+				}
+			} catch (e) {
+				window.location.href = 'login.html';
+			}
+		}
+		checkAuth();
+	</script>
 	<audio class="song" controls loop>
         <source src="hbd.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
@@ -161,7 +184,8 @@
 					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
 					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
 					<button class="btn btn-primary" id="story">A message for you</button>
-					
+					<button class="btn btn-danger" id="logout" style="margin-left: 10px;">Logout</button>
+
 				</div>
 			</div>
 			<!-- <div class="col-md-2">
