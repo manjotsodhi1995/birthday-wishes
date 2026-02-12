@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
-<!--[if gt IE 8]> <html> <![endif]-->
-<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<html lang="en">
 <head>
-	<title>Happy Birthday</title>
+	<title>Happy Birthday Simran</title>
 	<meta charset="UTF-8" />
 	<meta name="description" content="Happy Birthday Simran">
 	<meta name="robots" content="index, follow" />
-	<link rel="author"  /> 
     <meta name="keywords" content="Birthday, Happy">
-    <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
     <meta property="og:image" content="favicon.ico" />
     <meta property="og:description" content="Wish you a very Happy Birthday">
-    <!-- End of Facebook Meta Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="loading.css">
-
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
@@ -63,25 +56,25 @@
  
 
 	<div class="container">
-		
-		<div class="row">
+
+		<div class="row lights-row">
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_yellow"></div>
+				<div class="bulb" id="bulb_yellow" role="img" aria-label="Yellow light"></div>
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_red"></div>
+				<div class="bulb" id="bulb_red" role="img" aria-label="Red light"></div>
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_blue"></div>
+				<div class="bulb" id="bulb_blue" role="img" aria-label="Blue light"></div>
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_green"></div>
+				<div class="bulb" id="bulb_green" role="img" aria-label="Green light"></div>
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_pink"></div>
+				<div class="bulb" id="bulb_pink" role="img" aria-label="Pink light"></div>
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_orange"></div>
+				<div class="bulb" id="bulb_orange" role="img" aria-label="Orange light"></div>
 			</div>
 		</div>
 		<div class="row">
@@ -150,30 +143,43 @@
 
 			</div>
 		</div>
-		<div class="navbar navbar-fixed-bottom">
+		<div class="navbar navbar-fixed-bottom control-navbar">
 			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
-					<button class="btn btn-primary" id="play">Play Music</button>
-					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
-					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
-					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
-					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-					<button class="btn btn-primary" id="story">A message for you</button>
-					
+				<div class="col-md-8 col-md-offset-2 col-xs-12 button-container">
+					<button class="btn btn-primary btn-action" id="turn_on">
+						<span class="btn-icon">💡</span>
+						<span class="btn-text">Turn On Lights</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="play">
+						<span class="btn-icon">🎵</span>
+						<span class="btn-text">Play Music</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="bannar_coming">
+						<span class="btn-icon">🎨</span>
+						<span class="btn-text">Let's Decorate</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="balloons_flying">
+						<span class="btn-icon">🎈</span>
+						<span class="btn-text">Fly Balloons</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="cake_fadein">
+						<span class="btn-icon">🎂</span>
+						<span class="btn-text">Show Cake</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="light_candle">
+						<span class="btn-icon">🕯️</span>
+						<span class="btn-text">Light Candle</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="wish_message">
+						<span class="btn-icon">🎉</span>
+						<span class="btn-text">Happy Birthday</span>
+					</button>
+					<button class="btn btn-primary btn-action" id="story">
+						<span class="btn-icon">💌</span>
+						<span class="btn-text">Special Message</span>
+					</button>
 				</div>
 			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
 		</div>
 
 
