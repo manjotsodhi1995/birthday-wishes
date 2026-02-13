@@ -1,0 +1,367 @@
+/* Contact Page Styles */
+
+body {
+    background: linear-gradient(135deg, #FFDAB9 0%, #FFE4B5 50%, #FFEFD5 100%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Decorative Balloons - Similar to main page */
+.balloons {
+    position: fixed;
+    bottom: -100px;
+    opacity: 0.4;
+    z-index: 1;
+    width: 80px;
+    height: 146px;
+    background-repeat: no-repeat;
+    background-size: 80px 146px;
+    animation: float 6s ease-in-out infinite;
+}
+
+#b1 {
+    background-image: url('b1.png');
+    left: 5%;
+    animation-delay: 0s;
+}
+
+#b2 {
+    background-image: url('b2.png');
+    left: 20%;
+    animation-delay: 1s;
+}
+
+#b3 {
+    background-image: url('b3.png');
+    left: 35%;
+    animation-delay: 2s;
+}
+
+#b4 {
+    background-image: url('b4.png');
+    right: 35%;
+    animation-delay: 1.5s;
+}
+
+#b5 {
+    background-image: url('b5.png');
+    right: 20%;
+    animation-delay: 2.5s;
+}
+
+#b6 {
+    background-image: url('b6.png');
+    right: 5%;
+    animation-delay: 0.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+.balloon-border {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.page-title {
+    font-family: 'Signika', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #466baf;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.page-subtitle {
+    font-size: 22px;
+    color: #C4515C;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    animation: fadeInDown 1.2s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Form Wrapper */
+.contact-form-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Styles */
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #466baf;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form .required {
+    color: #C4515C;
+}
+
+.contact-form .form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-control:focus {
+    border-color: #466baf;
+    box-shadow: 0 0 10px rgba(70, 107, 175, 0.2);
+    outline: none;
+}
+
+.contact-form textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.error-message {
+    color: #C4515C;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #466baf;
+    border-color: #466baf;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(70, 107, 175, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #3a5a99;
+    border-color: #3a5a99;
+    box-shadow: 0 8px 20px rgba(70, 107, 175, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-default {
+    background-color: #fff;
+    border-color: #466baf;
+    color: #466baf;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #466baf;
+    border-color: #466baf;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(70, 107, 175, 0.3);
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    margin-bottom: 50px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-box .icon {
+    font-size: 48px;
+    color: #466baf;
+    margin-bottom: 15px;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #466baf;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Back to Home Section */
+.back-home-section {
+    margin-bottom: 40px;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .page-title {
+        font-size: 42px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px;
+    }
+
+    .info-box {
+        margin-bottom: 15px;
+    }
+
+    .balloons {
+        width: 60px;
+        height: 110px;
+        background-size: 60px 110px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .page-title {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-form-wrapper {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .balloons {
+        width: 50px;
+        height: 92px;
+        background-size: 50px 92px;
+    }
+}

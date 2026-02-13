@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Contact Us">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Contact, Message">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<!-- Decorative balloons in background -->
+	<div class="balloons" id="b1"></div>
+	<div class="balloons" id="b2"></div>
+	<div class="balloons" id="b3"></div>
+	<div class="balloons" id="b4"></div>
+	<div class="balloons" id="b5"></div>
+	<div class="balloons" id="b6"></div>
+
+	<div class="container">
+		<!-- Header Section -->
+		<div class="row header-section">
+			<div class="col-md-12 text-center">
+				<h1 class="page-title">Contact Us</h1>
+				<p class="page-subtitle">We'd love to hear from you!</p>
+			</div>
+		</div>
+
+		<!-- Contact Form Section -->
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<div class="contact-form-wrapper">
+					<form id="contactForm" class="contact-form">
+						<!-- Name Field -->
+						<div class="form-group">
+							<label for="name">Name <span class="required">*</span></label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+							<span class="error-message" id="nameError"></span>
+						</div>
+
+						<!-- Email Field -->
+						<div class="form-group">
+							<label for="email">Email <span class="required">*</span></label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com" required>
+							<span class="error-message" id="emailError"></span>
+						</div>
+
+						<!-- Subject Field -->
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message">
+						</div>
+
+						<!-- Message Field -->
+						<div class="form-group">
+							<label for="message">Message <span class="required">*</span></label>
+							<textarea class="form-control" id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+							<span class="error-message" id="messageError"></span>
+						</div>
+
+						<!-- Submit Button -->
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-primary btn-lg">
+								<span class="btn-text">Send Message</span>
+								<span class="btn-loading" style="display: none;">Sending...</span>
+							</button>
+						</div>
+
+						<!-- Success/Error Messages -->
+						<div class="alert alert-success" id="successMessage" style="display: none;">
+							<strong>Thank you!</strong> Your message has been sent successfully.
+						</div>
+						<div class="alert alert-danger" id="errorMessage" style="display: none;">
+							<strong>Oops!</strong> Please fill in all required fields correctly.
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Information Section -->
+		<div class="row contact-info-section">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 text-center">
+						<div class="info-box">
+							<div class="icon">
+								<span class="glyphicon glyphicon-envelope"></span>
+							</div>
+							<h3>Email</h3>
+							<p>info@example.com</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<div class="info-box">
+							<div class="icon">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<h3>Phone</h3>
+							<p>+1 (555) 123-4567</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 text-center">
+						<div class="info-box">
+							<div class="icon">
+								<span class="glyphicon glyphicon-map-marker"></span>
+							</div>
+							<h3>Address</h3>
+							<p>123 Main Street<br>City, State 12345</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Back to Home Button -->
+		<div class="row">
+			<div class="col-md-12 text-center back-home-section">
+				<a href="index.html" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-home"></span> Back to Home
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Decorative balloon border -->
+	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="contact.js"></script>
+</body>
+</html>
