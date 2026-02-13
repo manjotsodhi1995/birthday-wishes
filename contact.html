@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>Contact Us - Birthday Wishes</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Contact Us">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Contact, Birthday, Happy">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href='https://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="contact-page">
+	<div class="container contact-container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="contact-header">
+					<h1>Get In Touch</h1>
+					<p class="subtitle">We'd love to hear from you!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="contact-form-wrapper">
+					<form id="contactForm" class="contact-form">
+						<div class="form-group">
+							<label for="name">Your Name</label>
+							<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email Address</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+						</div>
+
+						<div class="form-group">
+							<label for="phone">Phone Number</label>
+							<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+						</div>
+
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="What is this about?" required>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea class="form-control" id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+						</div>
+
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+							<a href="index.html" class="btn btn-default btn-lg">Back to Home</a>
+						</div>
+					</form>
+
+					<div id="formSuccess" class="alert alert-success" style="display: none;">
+						<strong>Success!</strong> Your message has been sent successfully. We'll get back to you soon!
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row contact-info">
+			<div class="col-md-4 text-center">
+				<div class="info-box">
+					<div class="icon">📧</div>
+					<h3>Email</h3>
+					<p>contact@birthdaywishes.com</p>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="info-box">
+					<div class="icon">📱</div>
+					<h3>Phone</h3>
+					<p>+1 (555) 123-4567</p>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="info-box">
+					<div class="icon">📍</div>
+					<h3>Location</h3>
+					<p>Celebration City, Happy Street</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="contact.js"></script>
+</body>
+</html>
