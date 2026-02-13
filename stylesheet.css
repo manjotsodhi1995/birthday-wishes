@@ -1,6 +1,5 @@
 body {
-	/*background-color: #FFDAB9;	*/
-	background-color: #000;
+	background-color: #1a1a1a;
 	-webkit-transition:background-color linear 5s;
 	-moz-transition:background-color linear 5s;
 	-o-transition:background-color linear 5s;
@@ -12,7 +11,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #2a2a2a;
 	
 }
 .peach-after {
@@ -25,90 +24,90 @@ body {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #252525;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #2a2a2a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #1f1f1f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #252525;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #2a2a2a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #1f1f1f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #252525;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #2a2a2a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #1f1f1f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #252525;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #2a2a2a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #1f1f1f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #252525;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #2a2a2a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #1f1f1f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #1a1a1a;
 	}
 }
 
@@ -1089,8 +1088,8 @@ audio {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
 	font-size: 50px;
-	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
+	color: #fff;
+	text-shadow: 3px 3px 6px #000;
 	display: none;
 }
 #b1,#b11 {
@@ -1260,6 +1259,11 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
+.navbar-fixed-bottom {
+	background-color: rgba(26, 26, 26, 0.95);
+	border-top: 1px solid #444;
+	padding: 10px 0;
+}
 #play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
 	display: none;
 }
@@ -1275,29 +1279,29 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #C4515C;
-	text-shadow: 2px 2px 2px #FFF;
+	color: #ff6b7a;
+	text-shadow: 2px 2px 4px #000;
 	display: none;
 	font-weight: bold;
 }
 
 .btn-primary {
-        border-color: #466baf;
+        border-color: #5a7fc7;
         padding: 10px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
         color: #fff;
-        background-color: #466baf;
+        background-color: #5a7fc7;
 }
     .btn-primary:hover,
     .btn-primary:focus,
     .btn-primary:active,
     .btn-primary.active,
     .open .dropdown-toggle.btn-primary {
-        border-color: #fff;
+        border-color: #7a9fd7;
         color: #fff;
-        background-color: #466baf;
+        background-color: #7a9fd7;
     }
 
 
