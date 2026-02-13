@@ -41,7 +41,6 @@ $("document").ready(function() {
     $("#bulb_green").addClass("bulb-glow-green-after");
     $("#bulb_pink").addClass("bulb-glow-pink-after");
     $("#bulb_orange").addClass("bulb-glow-orange-after");
-    $("body").css("backgroud-color", "#FFF");
     $("body").addClass("peach-after");
     $(this)
       .fadeOut("slow")
