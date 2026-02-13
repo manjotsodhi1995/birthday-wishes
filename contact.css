@@ -1,0 +1,225 @@
+.contact-page {
+	background-color: #FFDAB9;
+	overflow-x: hidden;
+}
+
+.contact-container {
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.back-link {
+	display: inline-block;
+	margin: 20px 0;
+	font-family: 'Signika', sans-serif;
+	font-size: 18px;
+	color: #466baf;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.back-link:hover {
+	color: #C4515C;
+	text-decoration: none;
+	transform: translateX(-5px);
+}
+
+.contact-header {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.contact-title {
+	font-family: 'Signika', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	color: #C4515C;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.contact-subtitle {
+	font-family: 'Signika', sans-serif;
+	font-size: 20px;
+	color: #466baf;
+	font-weight: 600;
+}
+
+.contact-form-wrapper {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	margin-bottom: 50px;
+}
+
+.contact-form label {
+	font-family: 'Signika', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #466baf;
+	margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+	border: 2px solid #466baf;
+	border-radius: 8px;
+	padding: 12px 15px;
+	font-family: 'Signika', sans-serif;
+	font-size: 15px;
+	transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+	border-color: #C4515C;
+	box-shadow: 0 0 8px rgba(196, 81, 92, 0.3);
+	outline: none;
+}
+
+.contact-form textarea.form-control {
+	resize: vertical;
+	min-height: 150px;
+}
+
+.submit-btn {
+	margin-top: 20px;
+	padding: 15px 50px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 30px;
+	transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 15px rgba(70, 107, 175, 0.4);
+}
+
+.success-message {
+	display: none;
+	text-align: center;
+	padding: 40px;
+	animation: fadeInScale 0.5s ease;
+}
+
+.success-message h3 {
+	font-family: 'Signika', sans-serif;
+	font-size: 36px;
+	color: #C4515C;
+	font-weight: 700;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.success-message p {
+	font-family: 'Signika', sans-serif;
+	font-size: 18px;
+	color: #466baf;
+	margin-bottom: 25px;
+}
+
+@keyframes fadeInScale {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.contact-info {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.info-box {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 30px 20px;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.info-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-box h3 {
+	font-family: 'Signika', sans-serif;
+	font-size: 24px;
+	color: #466baf;
+	font-weight: 700;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.info-box p {
+	font-family: 'Signika', sans-serif;
+	font-size: 16px;
+	color: #555;
+	margin: 0;
+}
+
+.balloon-float {
+	opacity: 0.7;
+	animation: floatBalloon 15s ease-in-out infinite;
+}
+
+.balloon-float h2 {
+	display: block;
+}
+
+#b1 { left: 5%; animation-delay: 0s; }
+#b2 { left: 15%; animation-delay: 2s; }
+#b3 { left: 25%; animation-delay: 4s; }
+#b4 { left: 45%; animation-delay: 1s; }
+#b5 { left: 60%; animation-delay: 3s; }
+#b6 { left: 75%; animation-delay: 5s; }
+#b7 { left: 90%; animation-delay: 2.5s; }
+
+@keyframes floatBalloon {
+	0%, 100% {
+		transform: translateY(0) rotate(0deg);
+	}
+	25% {
+		transform: translateY(-30px) rotate(5deg);
+	}
+	50% {
+		transform: translateY(-60px) rotate(-5deg);
+	}
+	75% {
+		transform: translateY(-30px) rotate(3deg);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.contact-title {
+		font-size: 36px;
+	}
+	
+	.contact-form-wrapper {
+		padding: 25px;
+	}
+	
+	.info-box {
+		margin-bottom: 15px;
+	}
+	
+	.balloons {
+		width: 70px;
+		height: 128px;
+		background-size: 70px 128px;
+	}
+	
+	.balloons h2 {
+		font-size: 35px;
+	}
+}
