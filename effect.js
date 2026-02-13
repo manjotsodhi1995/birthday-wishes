@@ -230,3 +230,9 @@ $("document").ready(function() {
 });
 
 //alert('hello');
+
+$("#darkModeToggle").click(function() {
+  $("body").toggleClass("light-mode");
+  var isLight = $("body").hasClass("light-mode");
+  $(this).text(isLight ? "☀️" : "🌙");
+});
