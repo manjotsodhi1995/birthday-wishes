@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Get in touch with us">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="contact-page">
+
+	<!-- Navigation -->
+	<nav class="contact-nav">
+		<div class="nav-inner">
+			<span class="nav-title">Get In Touch</span>
+			<a href="index.html" class="nav-back">Back to Celebration</a>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<div class="contact-header">
+		<h1>Contact Us</h1>
+		<p>We would love to hear from you</p>
+	</div>
+
+	<!-- Decorative Dots -->
+	<div class="contact-decoration">
+		<div class="deco-dots">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<!-- Contact Form -->
+	<div class="contact-form-wrapper">
+		<div class="contact-form-card">
+			<form id="contactForm" novalidate>
+				<div class="form-group">
+					<label for="contactName">Your Name</label>
+					<input type="text" id="contactName" placeholder="Enter your name">
+					<div class="error-text" id="nameError">Please enter your name</div>
+				</div>
+
+				<div class="form-group">
+					<label for="contactEmail">Email Address</label>
+					<input type="email" id="contactEmail" placeholder="Enter your email">
+					<div class="error-text" id="emailError">Please enter your email</div>
+				</div>
+
+				<div class="form-group">
+					<label for="contactSubject">Subject</label>
+					<input type="text" id="contactSubject" placeholder="What is this about?">
+					<div class="error-text" id="subjectError">Please enter a subject</div>
+				</div>
+
+				<div class="form-group">
+					<label for="contactMessage">Message</label>
+					<textarea id="contactMessage" placeholder="Write your message here..."></textarea>
+					<div class="error-text" id="messageError">Please enter your message</div>
+				</div>
+
+				<button type="submit" class="btn-submit">Send Message</button>
+			</form>
+		</div>
+
+		<!-- Success Message -->
+		<div class="success-message">
+			<h2>Thank You!</h2>
+			<p>Your message has been sent successfully</p>
+			<a href="index.html" class="btn-back-home">Back to Celebration</a>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="contact-footer">
+		<p>Made with love</p>
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="contact.js"></script>
+
+</html>
