@@ -1,6 +1,5 @@
 body {
-	/*background-color: #FFDAB9;	*/
-	background-color: #000;
+	background-color: #0a0a14;
 	-webkit-transition:background-color linear 5s;
 	-moz-transition:background-color linear 5s;
 	-o-transition:background-color linear 5s;
@@ -12,8 +11,8 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
-	
+	background-color: #0a0a14;
+
 }
 .peach-after {
 	-webkit-animation:peach_alive linear 8s infinite;
@@ -25,90 +24,90 @@ body {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0d1117;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #08121f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0d1117;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #08121f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0d1117;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #08121f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0d1117;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #08121f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0d1117;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #08121f;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a14;
 	}
 }
 
@@ -1275,29 +1274,29 @@ audio {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	color: #C4515C;
-	text-shadow: 2px 2px 2px #FFF;
+	color: #ff6b81;
+	text-shadow: 2px 2px 4px #000;
 	display: none;
 	font-weight: bold;
 }
 
 .btn-primary {
-        border-color: #466baf;
+        border-color: #0a1a2d;
         padding: 10px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
         color: #fff;
-        background-color: #466baf;
+        background-color: #0a1a2d;
 }
     .btn-primary:hover,
     .btn-primary:focus,
     .btn-primary:active,
     .btn-primary.active,
     .open .dropdown-toggle.btn-primary {
-        border-color: #fff;
+        border-color: #e94560;
         color: #fff;
-        background-color: #466baf;
+        background-color: #0d1117;
     }
 
 
