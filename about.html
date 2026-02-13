@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+	<title>About - Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="About this birthday greeting">
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<style>
+		body {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			min-height: 100vh;
+			padding: 20px;
+		}
+		.about-container {
+			max-width: 800px;
+			margin: 50px auto;
+			background: rgba(255, 255, 255, 0.95);
+			padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+		}
+		.about-header {
+			text-align: center;
+			margin-bottom: 30px;
+			color: #667eea;
+		}
+		.about-header h1 {
+			font-size: 2.5em;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		.about-content {
+			color: #333;
+			line-height: 1.8;
+			font-size: 1.1em;
+		}
+		.about-content h2 {
+			color: #764ba2;
+			margin-top: 30px;
+			margin-bottom: 15px;
+			font-size: 1.8em;
+		}
+		.about-content p {
+			margin-bottom: 15px;
+		}
+		.features-list {
+			list-style: none;
+			padding-left: 0;
+		}
+		.features-list li {
+			padding: 10px 0;
+			padding-left: 30px;
+			position: relative;
+		}
+		.features-list li:before {
+			content: "🎈";
+			position: absolute;
+			left: 0;
+		}
+		.back-button {
+			display: inline-block;
+			margin-top: 30px;
+			padding: 12px 30px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-decoration: none;
+			border-radius: 25px;
+			transition: transform 0.3s ease;
+		}
+		.back-button:hover {
+			transform: scale(1.05);
+			color: white;
+			text-decoration: none;
+		}
+		.tech-stack {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-top: 15px;
+		}
+		.tech-badge {
+			background: #667eea;
+			color: white;
+			padding: 8px 15px;
+			border-radius: 20px;
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="about-container">
+		<div class="about-header">
+			<h1>About This Project</h1>
+		</div>
+
+		<div class="about-content">
+			<h2>What is this?</h2>
+			<p>This is an interactive birthday greeting website designed to create a memorable and delightful experience for someone special. The page features animated balloons, decorative lights, a beautiful cake, and a heartfelt message.</p>
+
+			<h2>Features</h2>
+			<ul class="features-list">
+				<li>Interactive light bulbs that glow on command</li>
+				<li>Happy birthday music that plays automatically</li>
+				<li>Animated balloons that fly across the screen</li>
+				<li>Beautiful birthday cake with candles</li>
+				<li>Step-by-step reveal of birthday messages</li>
+				<li>Fully responsive design for mobile and desktop</li>
+			</ul>
+
+			<h2>How It Works</h2>
+			<p>The experience is designed as an interactive journey. Visitors can click through various buttons to progressively reveal different elements of the birthday celebration, from turning on decorative lights to reading a personalized message.</p>
+
+			<h2>Technology Stack</h2>
+			<div class="tech-stack">
+				<span class="tech-badge">HTML5</span>
+				<span class="tech-badge">CSS3</span>
+				<span class="tech-badge">JavaScript</span>
+				<span class="tech-badge">jQuery</span>
+				<span class="tech-badge">Bootstrap</span>
+				<span class="tech-badge">LESS</span>
+			</div>
+
+			<h2>Purpose</h2>
+			<p>This project was created with love to celebrate a special day. It demonstrates how web technologies can be used creatively to bring joy and create memorable digital experiences for loved ones.</p>
+
+			<div class="text-center">
+				<a href="index.html" class="back-button">Back to Birthday Celebration</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
