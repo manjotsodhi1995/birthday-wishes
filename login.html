@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login - Happy Birthday</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Login to see the birthday surprise">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="favicon.ico" />
+	<link rel="stylesheet" href="login.css">
+</head>
+<body class="login-body">
+
+	<!-- Decorative confetti dots -->
+	<div class="confetti-dot"></div>
+	<div class="confetti-dot"></div>
+	<div class="confetti-dot"></div>
+	<div class="confetti-dot"></div>
+	<div class="confetti-dot"></div>
+	<div class="confetti-dot"></div>
+
+	<div class="login-wrapper">
+		<div class="login-card">
+			<div class="login-header">
+				<span class="cake-icon">&#127874;</span>
+				<h1>Welcome</h1>
+				<p>Sign in to see the birthday surprise</p>
+			</div>
+
+			<form id="loginForm" class="login-form" autocomplete="off">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<div class="input-wrapper">
+						<input type="text" id="username" name="username" placeholder="Enter your username" autofocus />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<div class="input-wrapper">
+						<input type="password" id="password" name="password" placeholder="Enter your password" />
+					</div>
+				</div>
+
+				<button type="submit" class="login-btn">Login</button>
+
+				<div class="error-message"></div>
+			</form>
+
+			<div class="login-footer">
+				A special surprise awaits you inside
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="login.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+// Redirect to login page if not authenticated
+if (sessionStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+
 $(window).load(function() {
   $(".loading").fadeOut("fast");
   $(".container").fadeIn("fast");
