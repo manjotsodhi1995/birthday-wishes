@@ -6,6 +6,12 @@
 <!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
 <head>
 	<title>Happy Birthday</title>
+	<script>
+		// Check if user is logged in
+		if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+			window.location.href = 'login.html';
+		}
+	</script>
 	<meta charset="UTF-8" />
 	<meta name="description" content="Happy Birthday Simran">
 	<meta name="robots" content="index, follow" />
@@ -161,7 +167,7 @@
 					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
 					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
 					<button class="btn btn-primary" id="story">A message for you</button>
-					
+					<button class="btn btn-danger" id="logout" style="margin-left: 20px;">Logout</button>
 				</div>
 			</div>
 			<!-- <div class="col-md-2">

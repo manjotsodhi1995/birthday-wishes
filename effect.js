@@ -3,6 +3,13 @@ $(window).load(function() {
   $(".container").fadeIn("fast");
 });
 $("document").ready(function() {
+  // Logout functionality
+  $("#logout").click(function() {
+    sessionStorage.removeItem('isLoggedIn');
+    sessionStorage.removeItem('username');
+    window.location.href = 'login.html';
+  });
+
   var vw;
   $(window).resize(function() {
     vw = $(window).width() / 2;
